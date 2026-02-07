@@ -7,7 +7,7 @@ export default function Question({ onFinish }) {
       className="send-flowers text-5xl"
       sequence={[
         'J’ai une question trrrèèèèèèès importante à te poser... 💭',
-        /*        500,
+        500,
         'Mon médecin',
         500,
         'Mon ange',
@@ -17,7 +17,7 @@ export default function Question({ onFinish }) {
         'Mon chou à la crème',
         500,
         'Mon coeur, voudrais-tu bien être\nma Valentine ?',
-        1000,*/
+        1000,
         () => onFinish(true),
       ]}
       speed={50}
