@@ -37,7 +37,7 @@ export default function App() {
     'Je suis à tout à toi ❤️',
   ];
 
-  const lastNoMessage = 'Allez pleaase 😭';
+  const lastNoMessage = "J'ai maaal 😭";
 
   function gifAfterQuestion() {
     return (
