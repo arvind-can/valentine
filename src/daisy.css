@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+    themes: valentine --default, valentine --prefersdark;
+}
+
+.send-flowers {
+    font-family: "Send Flowers", cursive;
+    white-space: pre-line
+}

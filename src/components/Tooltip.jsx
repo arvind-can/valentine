@@ -6,7 +6,7 @@ export default function Tooltip({ children, messages }) {
   const onMouseEnterHandler = () => {
     let randomIndex = Math.floor(Math.random() * messages.length);
     while (previousIndex === randomIndex) randomIndex = Math.floor(Math.random() * messages.length);
-    setMessage(messages[Math.floor(Math.random() * messages.length)]);
+    setMessage(messages[randomIndex]);
     setPreviousIndex(randomIndex);
   };
   return (

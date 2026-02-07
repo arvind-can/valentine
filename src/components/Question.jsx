@@ -1,4 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
+import '../daisy.css';
 
 export default function Question({ onFinish }) {
   return (
@@ -21,6 +22,9 @@ export default function Question({ onFinish }) {
       ]}
       speed={50}
       repeat={0}
+      style={{
+        color: '#C4005B', // <-- ta couleur
+      }}
     />
   );
 }

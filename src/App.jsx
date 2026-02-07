@@ -1,15 +1,15 @@
 import Background from './components/Background.jsx';
-import HeartIcon from './components/HeartIcon.jsx';
 import Tooltip from './components/Tooltip.jsx';
 import Question from './components/Question.jsx';
 import { useState } from 'react';
 import Gif from './components/Gif.jsx';
 import RunawayNoButton from './components/RunawayNoButton.jsx';
+import './daisy.css';
 
-export default function App() {
+export default function App({ onYesClickHandler }) {
   const [questionFinish, setQuestionFinish] = useState(false);
   const [noQuoteIndex, setNoQuoteIndex] = useState(0);
-  const [yesPage, setYesPage] = useState(false);
+
   const noMessages = [
     '😳 Oh… tu es sûre ?',
     'Hmm… réfléchis encore un peu 💭',
@@ -62,8 +62,7 @@ export default function App() {
     return (
       <div className={'flex flex-row justify-center items-center gap-2'}>
         <Tooltip messages={yesMessages}>
-          <button className="btn btn-neutral" onClick={() => setYesPage(true)}>
-            <HeartIcon />
+          <button className="btn btn-neutral" onClick={() => onYesClickHandler(true)}>
             Ouiii 💖
           </button>
         </Tooltip>
@@ -73,14 +72,12 @@ export default function App() {
   }
 
   return (
-    <>
-      <Background>
-        <div className={'flex flex-col justify-center items-center gap-17'}>
-          {questionFinish && gifAfterQuestion()}
-          <Question onFinish={setQuestionFinish} />
-          {questionFinish && formAfterQuestion()}
-        </div>
-      </Background>
-    </>
+    <Background>
+      <div className={'flex flex-col justify-center items-center gap-17'}>
+        {questionFinish && gifAfterQuestion()}
+        <Question onFinish={setQuestionFinish} />
+        {questionFinish && formAfterQuestion()}
+      </div>
+    </Background>
   );
 }
