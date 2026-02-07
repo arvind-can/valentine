@@ -21,7 +21,7 @@ export default function App({ onYesClickHandler }) {
     'Le bouton “Oui” est juste à côté hein..',
     'C’est ton dernier mot ? 👀',
     'Bon… et si je te faisais un câlin ? 🤍',
-    "Il te faut plus qu'un calin ??, madame est demandante dis donc 😏",
+    /*"Il te faut plus qu'un calin ??, madame est demandante dis donc 😏"*/
   ];
 
   const yesMessages = [
@@ -32,7 +32,7 @@ export default function App({ onYesClickHandler }) {
     'Avec toi, tout devient magique ✨',
     'J’ai des papillons dans le ventre 🦋',
     'Tu illumines ma vie 🌙',
-    'Je veux sentir ton chaleur sur mon corps, y déposer mes lèvres sur chacune de tes courbures 💋',
+    /*'Je veux sentir ton chaleur sur mon corps, y déposer mes lèvres sur chacune de tes courbures 💋',*/
     'Mon amour, tu me fais tourner la tête 💓',
     'Je suis à tout à toi ❤️',
   ];
